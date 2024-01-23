@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <input type="text" id="sample1">
+    <button onclick="display()">Submit</button> -->
+    <p id="sample"></p>
+
+    <script>
+        // function display() {
+        //     var x;
+        //     x = document.getElementById("sample1").value;
+        //     if (x % 2 == 0) {
+        //         alert("Even")
+        //     }
+        //     else {
+        //         alert("Odd")
+        //     }
+        // }
+        let day = 4;
+        let value;
+        switch (day) {
+            case 0:
+                value = "sunday"
+                break;
+            case 1:
+                value = "monday"
+                break;
+            case 2:
+                value = "tuesday"
+                break;
+            case 3:
+                value = "wednesday"
+                break;
+            case 4:
+                value = "thursday"
+                break;
+            case 5:
+                value = "friday"
+                break;
+            case 6:
+                value = "saturday"
+                break;
+            default:
+                value = "not defined"
+        }
+        document.getElementById ("sample").innerHTML ="today is " +  value;
+    </script>
+</body>
+
+</html>
