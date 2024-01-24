@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Enter your mark:</p>
+    <input type="text" name="" id="mark">
+    <button onclick="submit()">Submit</button>
+    <p id="grade"></p>
+    <script>
+        function submit() {
+            let Grade;
+            let x;
+            x = document.getElementById("mark").value
+            if (x >= 90) {
+                Grade = "A";
+            }
+            else if (x >= 80) {
+                Grade = "B";
+            }
+            else if (x >= 70) {
+                Grade = "C";
+            }
+            else if (x >= 60) {
+                Grade = "D";
+            }
+            else{
+                Grade = "Failed";
+            }
+            document.getElementById("grade").innerHTML = Grade;
+        }
+    </script>
+</body>
+
+</html>

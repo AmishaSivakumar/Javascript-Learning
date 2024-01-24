@@ -54,13 +54,23 @@
         //     c=a/b;
         //     document.getElementById("sample3").value = c;
         // }
+        // function swap() {
+        //     var a, b;
+        //     a = Number(document.getElementById("sample1").value);
+        //     b = Number(document.getElementById("sample2").value);
+        //     temp = a;
+        //     a = b;
+        //     b = temp;
+        //     document.getElementById("sample3").value = a;
+        //     document.getElementById("sample4").value = b;
+        // }
         function swap() {
             var a, b;
             a = Number(document.getElementById("sample1").value);
             b = Number(document.getElementById("sample2").value);
-            temp = a;
-            a = b;
-            b = temp;
+            a = a + b;
+            b = a - b;
+            a = a - b
             document.getElementById("sample3").value = a;
             document.getElementById("sample4").value = b;
         }
