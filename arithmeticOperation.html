@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" id="sample1">
+    <input type="text" id="sample2">
+    <button onclick="add()">+</button>
+    <button onclick="sub()">-</button>
+    <button onclick="mul()">*</button>
+    <button onclick="div()">/</button>
+    <input type="text" id="sample3">
+    
+
+    <script>
+        var a=5, b=10
+        c=a+b
+        alert("Hello"+ c)
+        function add() {
+            var a,b,c;
+            a =Number (document.getElementById("sample1").value);
+            b=Number (document.getElementById("sample2").value);
+            c=a+b;
+            document.getElementById("sample3").value = c;
+        }
+        function sub() {
+            var a,b,c;
+            a =Number (document.getElementById("sample1").value);
+            b=Number (document.getElementById("sample2").value);
+            c=a-b;
+            document.getElementById("sample3").value = c;
+        }
+        function mul() {
+            var a,b,c;
+            a =Number (document.getElementById("sample1").value);
+            b=Number (document.getElementById("sample2").value);
+            c=a*b;
+            document.getElementById("sample3").value = c;
+        }
+        function div() {
+            var a,b,c;
+            a =Number (document.getElementById("sample1").value);
+            b=Number (document.getElementById("sample2").value);
+            c=a/b;
+            document.getElementById("sample3").value = c;
+        }
+        
+    </script>
+</body>
+
+</html>
