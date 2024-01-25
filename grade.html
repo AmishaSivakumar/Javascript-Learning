@@ -17,19 +17,19 @@
             let Grade;
             let x;
             x = document.getElementById("mark").value
-            if (x >= 90) {
+            if (x >= 90 && x <= 100) {
                 Grade = "A";
             }
-            else if (x >= 80) {
+            else if (x >= 80 && x<=90 ) {
                 Grade = "B";
             }
-            else if (x >= 70) {
+            else if (x >= 70 && x<=60) { 
                 Grade = "C";
             }
-            else if (x >= 60) {
+            else if (x >= 60 && x<=70) {
                 Grade = "D";
             }
-            else{
+            else {
                 Grade = "Failed";
             }
             document.getElementById("grade").innerHTML = Grade;

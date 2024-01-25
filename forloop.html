@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <p id="add"></p> -->
+    <!-- <p id="multiply"></p> -->
+    <p id="factorial"></p>
+    <button onclick="submit()">Submit</button>
+
+    <script>
+        // function submit(){
+        //     let number = "";
+        //     let i;
+        //     for (i = 1; i <= 5; i++) {
+        //         number += "The number is " + i + "<br>";
+        //     }
+        //     document.getElementById("add").innerHTML = number;
+        // }
+        // function submit() {
+        //     let number = "";
+        //     let i ;
+        //     for (i = 1; i <= 10; i++) {
+        //         number += i + "*2=" + i * 2 + "<br>";
+        //     }
+        //     document.getElementById("multiply").innerHTML = number;
+        // }
+        function submit() {
+            let fact=1;
+            let number = "";
+            let i;
+            for (i = 1; i <=5; i++) {
+                fact=fact*i
+            }
+            document.getElementById("factorial").innerHTML = fact;
+        }
+       
+    </script>
+</body>
+
+</html>
