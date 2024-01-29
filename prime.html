@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="primeno">
+    <button onclick="submit()">Submit</button>
+    <p id="result"></p>
+
+
+    <script>
+        function submit() {
+            var i, chk = 0;
+            let num = "";
+            num = document.getElementById("primeno").value
+            for (i = 2; i < num; i++) {
+                if (num % 2 == 0) {
+                    chk++;
+                    break;
+                }
+            }
+            if (num == 1)
+                document.getElementById("result").innerHTML = num + " is neither prime nor composite number";
+            else if (chk == 0)
+                document.getElementById("result").innerHTML = num + " is a prime number";
+            else
+                document.getElementById("result").innerHTML = num + " is not a prime number";
+
+        }
+    </script>
+</body>
+
+</html>

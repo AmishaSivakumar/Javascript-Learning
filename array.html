@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="array"></p>
+    <p id="array1"></p>
+    <p id="len"></p>
+    <script>
+        // var array = ["X", "Y", "O", "A", "C"];
+        // array.sort()
+        // array.reverse()
+        // document.getElementById("array").innerHTML = array
+        // let len = array.length
+        // document.getElementById("len").innerHTML = len
+        // let i = 0;
+        // var text = "";
+        // for (i = 0; i < len; i++) {
+        //     text += array[i] + "<br>"
+        // }
+        // document.getElementById("array").innerHTML = text
+        // array.push("D","P")
+        // document.getElementById("array").innerHTML = array
+        // array.pop()
+        // document.getElementById("array").innerHTML = array
+
+        // let fruits = ["mango", "apple", "orange", "banana"]
+        // document.getElementById("array").innerHTML=fruits.toString();
+        // document.getElementById("array").innerHTML=fruits.join("-");
+        // document.getElementById("array").innerHTML =fruits.shift();
+        // document.getElementById("array1").innerHTML=fruits;
+        // fruits.unshift("grapes", "kiwi")
+        // document.getElementById("array").innerHTML = fruits
+        // fruits[3]= "grapes"
+        // document.getElementById("array").innerHTML=fruits
+        // let vegetable = ["potato", "tomato", "onion"]
+        // const combine = fruits.concat(vegetable);
+        // document.getElementById("array1").innerHTML = combine
+
+        // splice: used to add element/s in an array by order
+        let name = ["anu", "sanu", "manu", "meenu"];
+        name.splice(2, 3, "appu", "seenu", "adhi")
+        document.getElementById("array").innerHTML = name
+
+        // slice: used to create a new array by removing the elements in that array by counting
+        let girls = ["achu", "paaru", "meenu", "lachu", "nandhu"]
+        let newgirls = girls.slice(2)
+        document.getElementById("array1").innerHTML = newgirls
+    </script>
+</body>
+
+</html>
