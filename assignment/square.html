@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="">Length:</label>
+    <input type="text" id="length"> <br>
+    <button onclick="area()">Calculate Area</button>
+    <p id="result"></p>
+    <script>
+        function area() {
+            var length = document.getElementById('length').value;
+            var area = length * length;
+            document.getElementById("result").innerHTML = area;
+        }
+    </script>
+</body>
+
+</html>
