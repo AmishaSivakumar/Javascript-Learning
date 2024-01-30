@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2 class="query">Welcome</h2>
+    <h2 class="query">Welcome</h2>
+    <p class="query">Welcoming you all.</p>
+    <script>
+        document.querySelector(".query").style.backgroundColor = "blue";
+    </script>
+
+    <h2 class="query1">Hii All</h2>
+    <h2 class="query1">Hii All</h2>
+    <script>
+        const List = document.querySelectorAll(".query1");
+        for (let i = 0; i < List.length; i++) {
+            List[i].style.backgroundColor = "yellow";
+        }
+    </script>
+</body>
+
+</html>

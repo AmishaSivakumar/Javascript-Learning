@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class student {
+            constructor(name, std, place) {
+                this.name = name;
+                this.std = std;
+                this.place = place;
+            }
+            getDetails() {
+                return (`She is ${this.name} at ${this.std} standard from ${this.place}.`)
+            }
+        }
+        let st1 = new student("malu", 2, "palakkad");
+        console.log(st1.getDetails())
+        console.log(st1.place)
+    </script>
+</body>
+
+</html>

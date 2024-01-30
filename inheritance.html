@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        class Phone {
+            constructor(brand) {
+                this.Phonename = brand;
+            }
+            parent() {
+                return "My phone is" + this.Phonename
+            }
+        }
+        class Model extends Phone {
+            constructor(brand, model) {
+                super(brand);
+                this.model = model;
+            }
+            chlid() {
+                return this.parent() + "of" +this.model + "model.";
+            }
+        }
+        const myphone = new Model("Samsung", "S23")
+        document.getElementById("demo").innerHTML = myphone.chlid();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=+, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        const details = {
+            name: "John",
+            age: 39,
+            place: "USA",
+        }
+        console.log(details.name);
+
+        const student = {
+            name: "Anu",
+            age: 18,
+            marks: {
+                maths: 60,
+                biology: 78,
+            }
+        }
+        console.log(student.marks.biology);
+
+        const person = {
+            name: "Ram",
+            age: 45,
+            hello: function () { console.log("Welcome") }
+        }
+        person.hello();
+
+        const person1 = {
+            name: "Mickel",
+            place: "India",
+            inner: function () {
+                console.log("He is Mr. " + (this.name) + " from " + (this.place))
+            }
+        }
+        person1.inner()
+    </script>
+</body>
+
+</html>

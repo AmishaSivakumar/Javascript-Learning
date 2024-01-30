@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Focus: <input type="text" id="input1" onfocus="focusEvent()"> <br> <br>
+    Keyup: <input type="text" id="input2" onkeyup="keyup()"> <br> <br>
+    Keydown: <input type="text" id="input3" onkeydown="keydown()"> <br> <br>
+    Blur: <input type="text" id="input4" onfocus="focusFunction()" onblur="blurFunction()"> <br> <br>
+    <h2 id="input5" onmouseover="mouseover()" onmouseout="mouseout()">Mouse over me</h2>
+
+    <script>
+        function focusEvent() {
+            document.getElementById("input1").style.backgroundColor = "lightgrey";
+        }
+        function keyup() {
+            var x = document.getElementById("input2");
+            x.value = x.value.toUpperCase();
+        }
+        function keydown(){
+            document.getElementById("input3");
+            alert("Pressed a key.")
+        }
+        function focusFunction(){
+            document.getElementById("input4").style.backgroundColor="grey"
+        }
+        function blurFunction(){
+            document.getElementById("input4").style.backgroundColor="lightgrey"
+        }
+        function mouseover(){
+            document.getElementById("input5").style.color="blue"
+        }
+        function mouseout(){
+            document.getElementById("input5").style.color="black"
+        }
+    </script>
+</body>
+
+</html>
