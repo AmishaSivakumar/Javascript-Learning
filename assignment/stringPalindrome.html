@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function isPalindrome(str) {
+    // Remove non-alphanumeric characters and convert to lowercase
+    const cleanStr = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+
+    // Reverse the string
+    const reversedStr = cleanStr.split('').reverse().join('');
+
+    // Check if the original and reversed strings are the same
+    return cleanStr === reversedStr;
+}
+
+// Example usage:
+const inputString = "animal";
+if (isPalindrome(inputString)) {
+    console.log(`${inputString} is a palindrome.`);
+} else {
+    console.log(`${inputString} is not a palindrome.`);
+}
+
+    </script>
+</body>
+</html>
