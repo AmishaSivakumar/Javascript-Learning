@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function sum(x = 3, y = 2) { //default parameter
+            return x + y;
+        }
+        console.log(sum(10, 5));
+        console.log(sum(8));
+        console.log(sum());
+
+        // anonymous fctn : without a function name
+
+        let value = [1, 2, 3, 4]
+        value.forEach(function (val) {
+            console.log("welcome", val)
+        }
+        )
+        const fctn1 = function (val) {
+            console.log("hello", val)
+        }
+        fctn1("anu")
+
+        // arrow fctn
+        const fctn2 = (a, b) => {
+            return a + b
+        }
+        console.log(fctn2(2, 3))
+
+        // single line arrow fctn
+        const fctn3 = (a, b) => a + b;
+        console.log(fctn3(4, 9))
+
+        const fctn4 = () => "Haii";
+        console.log(fctn4())
+
+        // single parameter
+        const fctn5 = a => a * a;
+        console.log(fctn5(5))
+
+        // array in arrow fctn
+        const array = () => [5, 6, 7, 8];
+        console.log(array())
+    </script>
+</body>
+
+</html>

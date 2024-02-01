@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var matrix1 = [
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9]
+        ];
+
+        var matrix2 = [
+            [9, 8, 7],
+            [6, 5, 4],
+            [3, 2, 1]
+        ];
+
+        var resultMatrix = addMatrices(matrix1, matrix2);
+        function addMatrices(matrix1, matrix2) {
+            var resultMatrix = matrix1.map(function (row, i) {
+                return row.map(function (element, j) {
+                    return element + matrix2[i][j];
+                });
+            });
+
+            return resultMatrix;
+        }
+        document.write("Matrix 1:<br>" + JSON.stringify(matrix1) + "<br><br>");
+        document.write("Matrix 2:<br>" + JSON.stringify(matrix2) + "<br><br>");
+        document.write("Result Matrix:<br>" + JSON.stringify(resultMatrix));
+    </script>
+</body>
+
+</html>

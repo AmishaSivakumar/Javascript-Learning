@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // function welcome() {
+        //     console.log("Hello all")
+        // }
+        // setTimeout(welcome, 5000)
+        // console.log("wait for 5s")
+
+        // function showtime() {
+        //     let date = new Date();
+        //     let time = date.toLocaleTimeString();
+        //     console.log(time)
+        //     setTimeout(showtime, 4000)
+        // }
+        // showtime();
+
+        welcome("syra", callMe);
+        function callMe() {
+            console.log("Call back function")
+        }
+        function welcome(name, callback) {
+            console.log("Hey " + name)
+            callback()
+        }
+
+    </script>
+</body>
+
+</html>

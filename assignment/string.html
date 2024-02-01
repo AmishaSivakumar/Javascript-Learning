@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var string = "This is a string with spaces";
+        var result = removeSpace(string);
+        function removeSpace(string) {
+            return string.replace(/\s/g, '');
+        }
+        document.write("<p>String: " + string + "</p>");
+        document.write("<p>String Without Spaces: " + result + "</p>");
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var inputString = "Hello World";
+        count(inputString);
+        function count(str) {
+            str = str.toLowerCase();
+
+            var vowels = 'aeiou';
+            var vowelCount = 0;
+            var consonantCount = 0;
+
+            for (var i = 0; i < str.length; i++) {
+                var char = str[i];
+                if (vowels.indexOf(char) !== -1) {
+                    vowelCount++;
+                } else if (char >= 'a' && char <= 'z') {
+                    consonantCount++;
+                }
+            }
+
+            document.write('<p>String: ' + str + '</p>');
+            document.write('<p>Total Vowels: ' + vowelCount + '</p>');
+            document.write('<p>Total Consonants: ' + consonantCount + '</p>');
+        }
+    </script>
+</body>
+
+</html>
