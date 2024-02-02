@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        var inputString = "This is a string";
+
+        function countCharacters() {
+
+            if (inputString !== null && inputString !== "") {
+                var charCount = inputString.length;
+                document.write("Total number of characters: " + charCount + "<br>");
+            } else {
+                document.write("Invalid input. Please enter a valid string.");
+            }
+        }
+        countCharacters();
+
+        function countWords(inputString) {
+            inputString = inputString.trim();
+
+            if (inputString === "") {
+                return 0;
+            }
+            var words = inputString.split(/\s+/);
+
+            return words.length;
+        }
+        var wordCount = countWords(inputString);
+
+        document.write("Total number of words: " + wordCount);
+    </script>
+
+</body>
+
+</html>

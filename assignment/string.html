@@ -16,6 +16,12 @@
         }
         document.write("<p>String: " + string + "</p>");
         document.write("<p>String Without Spaces: " + result + "</p>");
+
+        var result1 = reverseString(string);
+        function reverseString(str) {
+            return str.split('').reverse().join('');
+        }
+        document.write("<p>Reverse String:" + result1 + "<p>")
     </script>
 </body>
 
