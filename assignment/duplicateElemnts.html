@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function printDuplicates(arr) {
+            var duplicateElements = {};
+
+            for (var i = 0; i < arr.length; i++) {
+                if (arr[i] in duplicateElements) {
+                    document.write(arr[i] + "<br>");
+                } else {
+                    duplicateElements[arr[i]] = true;
+                }
+            }
+        }
+
+        var myArray = [1, 2, 3, 4, 2, 5, 6, 1];
+
+        document.write("Duplicate elements in the array are: <br>");
+        printDuplicates(myArray);
+
+    </script>
+</body>
+
+</html>

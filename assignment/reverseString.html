@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        function reverseString(inputString) {
+            let characters = inputString.split('');
+            let specialCharacterRegex = /[^a-zA-Z0-9]/;
+
+            for (let i = 0, j = characters.length - 1; i < j;) {
+                if (!specialCharacterRegex.test(characters[i])) {
+                    if (!specialCharacterRegex.test(characters[j])) {
+                        [characters[i], characters[j]] = [characters[j], characters[i]];
+                        i++;
+                        j--;
+                    } else {
+                        j--;
+                    }
+                } else {
+                    i++;
+                }
+            }
+
+            let reversedString = characters.join('');
+            return reversedString;
+        }
+
+        let inputString = "Hello! World 123";
+        let reversedString = reverseString(inputString);
+
+        document.write("<p>Original String: " + inputString + "</p>");
+        document.write("<p>Reversed String: " + reversedString + "</p>");
+    </script>
+
+</body>
+
+</html>

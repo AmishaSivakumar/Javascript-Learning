@@ -11,12 +11,18 @@
     <script>
         var Array1 = [5, 2, 8, 1, 4];
         Array1.sort()
-        document.write(" Ascending Order: " + Array1) + ("<br>");
+        document.write(" Ascending Order: " + Array1 + ("<br>"));
 
         var Array2 = [3, 7, 8, 4, 8, 9];
         Array2.sort()
         Array2.reverse()
-        document.write("Descending order" + Array2)
+        document.write("Descending order: " + Array2 + ("<br>"))
+
+        const combine = Array1.concat(Array2)
+        document.write("Merge: " + combine + ("<br>"))
+
+        let copyArray1= [...Array1];
+        document.write("Copied array: " +copyArray1)
     </script>
 </body>
 
