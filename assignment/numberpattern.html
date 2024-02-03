@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let n = 6;
+        let string1 = "";
+        let string2 = "";
+        for (i = 1; i <= n; i++) {
+            for (j = 1; j <= i; j++) {
+                string1 += i;
+            }
+            string1 += "<br>"
+        }
+        document.write("Pattern 1 <br>")
+        document.write(`<pre>${string1}</pre>`);
+
+        for (i = n; i >= 1; --i) {
+            for (j = 1; j <= i; j++) {
+                string2 += i;
+            }
+            string2 += "<br>"
+        }
+        document.write('Pattern 2 <br>')
+        document.write(`<pre>${string2}</pre>`)
+
+        function printCharacterPattern(rows, cols, character) {
+            for (let i = 0; i < rows; i++) {
+                for (let j = 0; j < cols; j++) {
+                    document.write(character + ' ');
+                }
+                document.write('<br>');
+            }
+        }
+
+        // Example usage:
+        document.write('Square Pattern <br><br>');
+        printCharacterPattern(5, 5, '*');
+
+        document.write('Custom Pattern <br><br>');
+        printCharacterPattern(3, 7, '#');
+    </script>
+</body>
+
+</html>

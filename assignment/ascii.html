@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function asciiToChar(asciiValue) {
+            return String.fromCharCode(asciiValue);
+        }
+        var asciiValue = 70;
+        var character = asciiToChar(asciiValue);
+        document.write("<p>ASCII Value: " + asciiValue + "</p>");
+        document.write("<p>Character: " + character + "</p>");
+
+        document.write("<h2>ASCII Values of All Characters</h2>");
+
+        for (let i = 0; i < 128; i++) {
+            document.write("<p>Character: " + String.fromCharCode(i) + " | ASCII Value: " + i + "</p>");
+        }
+    </script>
+</body>
+
+</html>
