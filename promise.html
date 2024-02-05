@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="sample"></p>
+    <script>
+     function display(result){
+        document.getElementById("sample").innerHTML=result;
+     }
+        let mypromise = new Promise(function (resolve, reject) {
+            let x = 5;
+            if (x == 0) {
+                resolve("Success")
+            }
+            else {
+                reject("Error")
+            }
+        })
+        mypromise.then(
+            function(value) {display(value)},
+            function(error) {display(error)}
+        )
+    </script>
+</body>
+
+</html>
